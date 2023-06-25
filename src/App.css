@@ -12,9 +12,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #63adea;
+}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #46458c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +43,645 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* //from here */
+
+/* Google Font Link */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+} */
+
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+nav {
+  background-color: rgb(49, 49, 115);
+  width: 100%;
+  margin-top: 0.1px;
+
+  border-radius: 25px;
+}
+nav.sticky {
+  padding: 15px 20px;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+nav .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #dce991;
+}
+nav.sticky .logo a {
+  color: #fff;
+}
+.nav-content .nav-links {
+  display: flex;
+}
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 4px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(224, 224, 148);
+  font-size: 18px;
+  font-weight: 500;
+
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #4070f4;
+}
+nav.sticky .nav-links li a {
+  color: #fff;
+  transition: all 0.4s ease;
+}
+nav.sticky .nav-links li a:hover {
+  color: #0e2431;
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("images/barbergologo.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+h2 {
+  font-size: 30px;
+  margin-bottom: 6px;
+  color: #4070f4;
+}
+.text {
+  text-align: justify;
+  padding: 40px 80px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #11120e;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #191a0f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .dropdown1 {
+  text-decoration: none;
+  color: rgb(224, 224, 148);
+} */
+
+.drop2 {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  float: none;
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content2 a:hover {
+  background-color: #ddd;
+}
+.drop2:hover .dropdown-content2 {
+  display: block;
+}
+
+/* login page css from here */
+
+.wel-sal {
+  font-size: 3em;
+  color: rgb(31, 50, 21);
+  padding: 0px 80px;
+  margin-top: 0px 120px;
+}
+.saloonloginpage {
+  /* display: flex;
+  align-items: center;
+  height: 100;
+  justify-content: center;
+  text-align: center; */
+
+  height: 525px;
+  width: 700px;
+  color: rgb(82, 180, 82);
+  background: #f0caa3;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin: 70px auto;
+}
+.slbtn {
+  position: relative;
+  height: 65px;
+  width: 210px;
+  margin: 10px 210px;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  background: rgb(130, 206, 238);
+  overflow: hidden;
+  transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slbtn:first-child {
+  color: #312092;
+  border-color: #312092;
+}
+/* button:last-child{
+  color: #ce5c0c;
+  border-color: #ce5c0c;
+} */
+.slbtn:before,
+.slbtn:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.4;
+  transition: 0.6s;
+}
+.slbtn:before {
+  width: 60px;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+.slbtn:after {
+  width: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+.slbtn:hover:before,
+.slbtn:hover:after {
+  opacity: 0.6;
+  transform: translateX(320px) skewX(-45deg);
+}
+.slbtn:hover {
+  color: #f2f2f2;
+}
+.slbtn:hover:first-child {
+  background: #053d62;
+}
+
+.p {
+  color: #312092;
+  margin: 200px 150px 0px 150px;
+}
+
+.sllgnbtn {
+  display: inline-block;
+  padding: 60px 80px; /* Adjust the padding values to control the button size */
+  font-size: 18px;
+
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e7e287; /* Set your desired background color */
+  color: black; /* Set your desired text color */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 350px;
+}
+
+.cstlgnbtn {
+  display: inline-block;
+  padding: 60px 62px; /* Adjust the padding values to control the button size */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e7e287; /* Set your desired background color */
+  color: black; /* Set your desired text color */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 350px;
+}
+
+.cstlgnbtn:hover {
+  background-color: #918b44;
+}
+.sllgnbtn:hover {
+  background-color: #918b44;
+}
+
+.fncbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 220px 0 750px;
+}
+
+.user {
+  /* display: flex; */
+  /* justify-content: first baseline; */
+  align-items: center;
+  color: rgb(240, 104, 104);
+  /* padding-left: 50px; */
+  /* float: right; */
+}
+
+.dp {
+  border-radius: 40px;
+}
+
+.logout {
+  border-radius: 8px;
+  width: 90px;
+  height: 20px;
+  background-color: rgb(228, 228, 141);
+}
+
+/* 
+pop css from here */
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.popup h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.popup button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+.google {
+  padding-right: 5px;
+}
+
+.salonnm {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+
+  /* margin: 0; */
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ca7fb1;
+  margin: 0;
+} */
+
+/* choosesalon css here */
+.custom-button {
+  display: block;
+  width: 400px;
+  padding: 50px 100px;
+  margin: 10px 10px;
+  background-color: #6de3ba;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.custom-button:hover {
+  background-color: #555;
+}
+
+/* hear */
+#mySelect {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dropdown-select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* Add more styles as needed */
+}
+
+.popup-pckg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.popup-pckg button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.popup-pckg button:hover {
+  background-color: #0056b3;
+}
+
+/* addslots css here */
+/* 
+#slotContainer {
+  text-align: center;
+  background-color: #c58caf;
+  border-radius: 5px;
+  padding: 80px;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(45, 27, 27, 0.1);
+  background-color: #ef9ccd;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(141, 9, 9);
+}
+
+/*
+h1 {
+  color: #5cbc35;
+}*/
+
+/* input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #351775;
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(13, 5, 25, 0.1);
+}
+
+button:hover {
+  background-color: #555;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#added-slot {
+  padding: 10px 20px;
+  background-color: #8cccdd;
+  color: #ad444f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+} */
+/* .added-slot:last-child {
+  background-color: #5cbc35;
+}  */
+
+.ssss {
+  margin-left: 550px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.frm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 350px;
+  background-color: grey;
+  margin-left: 550px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+#addButton {
+  background-color: #8a8e62;
+  height: 20px;
+  width: 60px;
+}
+
+.pppp {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 12px;
+  overflow: hidden;
+  width: 60%;
+  margin-left: 280px;
+  margin-bottom: 15px;
+
+  background-color: #3876a9;
+  border-radius: 12px;
+}
+
+.added-slot {
+  width: 130px;
+  margin-left: 369px;
+  background-color: #16303f;
+  color: whitesmoke;
+}
+
+#choose {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #191a0f;
+}
+
+#btnnnn {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 250px;
+  display: block;
+}
+
+.ujj {
+  margin-top: 40px;
+  background-color: #8b8c88;
+  display: flex;
+  justify-content: center;
+}
+.popup-pckg {
+  background-color: #adbdcf;
+}
+
+#ved {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #46458c;
+  width: 45%;
+  border-radius: 12px;
+  margin-left: 400px;
+  margin-top: 35px;
+  overflow: hidden;
+}
+
+.shirish {
+  color: #11120e;
+  margin-top: 10px;
+  margin-left: 270px;
+  margin-bottom: 12px;
+}
+
+.ujjwal {
+  background-color: #9d93d6;
+  margin-left: 262px;
+  width: 140px;
+}
+
+.popup {
+  background-color: rgb(152, 145, 145);
+  border-radius: 15px;
+  display: block;
+  width: 400px;
+  height: 250px;
+}
+#abhijit {
+  color: #000000;
+  margin-left: 69px;
+}
+
+#haggu {
+  margin-left: 35px;
+}
+
+.sneha {
+  margin-left: 70px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#prit {
+  width: 100px;
+  border: solid 1px black;
+}
+
+.app123 {
+  background: url("images/payment111.jpg");
+  background-color: white;
+}
+
+#paynow {
+  height: 80px;
+  width: 250px;
+  background-color: rgb(72, 141, 64);
+  cursor: pointer;
+  border-radius: 12px;
+}
+#paynow:hover {
+  background-color: rgb(72, 145, 94);
 }
